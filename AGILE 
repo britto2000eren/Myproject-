@@ -1,0 +1,60 @@
+User Story:
+As a user, I want to log in using my email and password so that I can access my account.
+
+Acceptance Criteria:
+- User can enter email and password.
+- Incorrect credentials show an error message.
+- Successful login redirects to the dashboard.
+
+Yesterday:
+- Completed Login API integration.
+
+Today:
+- Working on form validation and UI improvements.
+
+Blockers:
+- No blockers from my side.
+
+Sprint Goal:
+Implement Login Feature
+
+Sprint Tasks:
+1. Create login UI design.
+2. Develop login API.
+3. Integrate frontend and backend.
+4. Add email and password validation.
+5. Write test cases.
+6. Code review and deployment.
+
+Estimates:
+- Login UI: 3 hours
+- Login API: 5 hours
+- Validation: 2 hours
+- Testing: 3 hours
+
+
+Sprint Review:
+- Demonstrated working login page.
+- Valid and invalid user flows tested.
+- Client feedback: Change button color to blue.
+
+
+Sprint Retrospective:
+Good:
+- Team collaboration improved.
+- Tasks completed on time.
+
+Bad:
+- Testing started late.
+
+To Improve:
+- Begin testing earlier in the sprint.
+
+
+
+Product Backlog:
+1. User Login - High Priority
+2. User Signup - High Priority
+3. Product Listing - Medium Priority
+4. Add to Cart - Medium Priority
+5. Checkout - Low Priority
