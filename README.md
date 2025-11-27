@@ -51,7 +51,7 @@ The main goal of this portfolio is to represent my professional identity online,
 
 Add backend integration for the contact form
 
-Add theme toggle (Dark Mode / Light Mode)
+Add theme toggle (Dark mode✅ / Light Mode)
 
-Add animations using libraries like AOS or GSAP
+Add animations using libraries like AOS✅ or GSAP
 
