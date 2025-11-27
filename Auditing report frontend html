@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditing Report</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .search-box {
+        margin-bottom: 15px;
+        text-align: right;
+    }
+    .search-box input {
+        padding: 8px;
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+    th {
+        background: #007bff;
+        color: white;
+    }
+    tr:hover {
+        background: #f1f1f1;
+    }
+</style>
+</head>
+<body>
+
+<h1>Auditing Report</h1>
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search by Name...">
+</div>
+
+<table id="auditTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Auditor Name</th>
+            <th>Department</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>John Smith</td>
+            <td>Finance</td>
+            <td>2025-08-10</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Mary Johnson</td>
+            <td>HR</td>
+            <td>2025-08-08</td>
+            <td>Pending</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>David Brown</td>
+            <td>IT</td>
+            <td>2025-08-07</td>
+            <td>Completed</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    // Simple search filter
+    document.getElementById("searchInput").addEventListener("keyup", function() {
+        let filter = this.value.toLowerCase();
+        let rows = document.querySelectorAll("#auditTable tbody tr");
+        rows.forEach(row => {
+            let name = row.cells[1].textContent.toLowerCase();
+            row.style.display = name.includes(filter) ? "" : "none";
+        });
+    });
+</script>
+
+</body>
+</html>
