@@ -34,7 +34,7 @@ JavaScript: Used to add interactivity such as form validation, hamburger menu to
 
 🖼️ Project Showcase Section – Displays completed projects with live links or GitHub repository buttons.
 
-📩 Contact Form – Allows users to send a message (can later connect to backend or email API).
+📩 Contact Form – Allows users to send a message (britto02112000@gmail.com).
 
 
 
